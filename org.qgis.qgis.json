@@ -278,7 +278,6 @@
                         "-DGDAL_USE_MYSQL=ON",
                         "-DGDAL_USE_NETCDF=ON",
                         "-DGDAL_USE_ODBC=ON",
-                        "-DGDAL_USE_OPENCL=ON",
                         "-DGDAL_USE_OPENEXR=ON",
                         "-DGDAL_USE_OPENJPEG=ON",
                         "-DGDAL_USE_OPENSSL=ON",
