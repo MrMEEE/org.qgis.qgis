@@ -290,6 +290,7 @@
                         "-DGDAL_USE_SPATIALITE=ON",
                         "-DGDAL_USE_SQLITE3=ON",
                         "-DGDAL_USE_TIFF=ON",
+                        "-DGDAL_USE_TIFF_INTERNAL=ON",
                         "-DGDAL_USE_WEBP=ON",
                         "-DGDAL_USE_XERCESC=ON",
                         "-DGDAL_USE_ZLIB=ON",
