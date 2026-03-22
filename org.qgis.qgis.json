@@ -250,6 +250,7 @@
                 {
                     "name": "gdal",
                     "buildsystem": "cmake-ninja",
+                    "builddir": true,
                     "config-opts": [
                         "-DGDAL_USE_EXPAT=ON",
                         "-DENABLE_IPO=ON",
@@ -262,7 +263,6 @@
                         "-DGDAL_USE_CRYPTOPP=ON",
                         "-DGDAL_USE_DEFLATE=ON",
                         "-DGDAL_USE_FREEXL=ON",
-                        "-DGDAL_USE_GEOTIFF=ON",
                         "-DGDAL_USE_GEOS=ON",
                         "-DGDAL_USE_GIF=ON",
                         "-DGDAL_USE_HEIF=ON",
@@ -291,6 +291,8 @@
                         "-DGDAL_USE_SQLITE3=ON",
                         "-DGDAL_USE_TIFF=ON",
                         "-DGDAL_USE_TIFF_INTERNAL=ON",
+                        "-DGDAL_USE_GEOTIFF=OFF",
+                        "-DGDAL_USE_GEOTIFF_INTERNAL=ON",
                         "-DGDAL_USE_WEBP=ON",
                         "-DGDAL_USE_XERCESC=ON",
                         "-DGDAL_USE_ZLIB=ON",
@@ -765,8 +767,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "http://www.qhull.org/download/qhull-2020-src-8.0.2.tgz",
-                                    "sha256": "b5c2d7eb833278881b952c8a52d20179eab87766b00b865000469a45c1838b7e"
+                                    "url": "https://github.com/qhull/qhull/archive/refs/tags/v8.0.2.tar.gz",
+                                    "sha256": "8774e9a12c70b0180b95d6b0b563c5aa4bea8d5960c15e18ae3b6d2521d64f8b"
                                 }
                             ]
                         },
