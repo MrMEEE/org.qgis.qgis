@@ -257,6 +257,7 @@
                         "-DBUILD_PYTHON_BINDINGS=ON",
                         "-DGDAL_ENABLE_PLUGINS=ON",
                         "-DGDAL_USE_ARROW=OFF",
+                        "-DGDAL_USE_ARMADILLO=OFF",
                         "-DGDAL_USE_BLOSC=ON",
                         "-DGDAL_USE_CFITSIO=ON",
                         "-DGDAL_USE_CURL=ON",
@@ -503,7 +504,7 @@
                             "buildsystem": "simple",
                             "build-commands": [
                                 "./bootstrap.sh --prefix=${FLATPAK_DEST} --with-icu",
-                                "./b2 install -j ${FLATPAK_BUILDER_N_JOBS} headers variant=release threading=multi --layout=system"
+                                "./b2 install -j ${FLATPAK_BUILDER_N_JOBS} headers variant=release threading=multi --layout=system --without-mpi --without-graph_parallel"
                             ],
                             "sources": [
                                 {
